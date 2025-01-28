@@ -1,6 +1,4 @@
 clear
-echo "Output:"
-echo
 
 nasm $1.asm -f elf64 -o $1.o
 gcc $1.o -z noexecstack
